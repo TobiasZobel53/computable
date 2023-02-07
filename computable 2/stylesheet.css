@@ -1,0 +1,331 @@
+/* general start */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    height: 100%;
+    background-color: #fff;
+    color: #111;
+    font-family: VT323;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* general end */
+
+/* nav start */
+nav {
+    min-height: 80px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px gray;
+    overflow: hidden;
+    z-index: 3;
+    margin-top: auto;
+    
+}
+
+#logo {
+    height: 48px;
+    width: 48px;
+    margin-left: 50px;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 30px;
+    list-style-type: none;
+    display: inline-block;
+    transition: .5s ease;
+}
+
+nav ul li a {
+    color: #c1c1c1;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: VT323;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul li:hover {
+    text-decoration: none;
+    transform: scale(1.2);
+    color: #fff;
+    transition: .5s ease-in-out;
+    filter: drop-shadow(5px 5px 5px #ccc);
+}
+
+.active {
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:hover + nav ul li a {
+    color: #111;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+/* nav end */
+
+/* footer start */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer ul li a:hover {
+    border-bottom: 2px solid #fff;
+    transition: .2s ease-in-out;
+}
+
+/* footer end */
+
+
+/* html */
+.manman {
+    fLoAt: LeFt;
+}
+
+/* ***** */
+/* INDEX */
+/* ***** */
+
+/* article start */
+
+/* article-left start */
+.article-left {
+    float: left;
+}
+
+.article-ueberschrift {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 175px;
+}
+
+.article-left p {
+    font-size: 1.75em;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.button-style {
+    background-color: #111;
+    border: 2px solid #111;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: VT323;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+#first-button {
+    margin: 0;
+    position: absolute;
+    margin-left: 21%;
+}
+/* article-left end */
+
+/* article-right start */
+.article-right {
+    float: right;
+    height: auto;
+}
+
+.slideshow-container {
+    float: right;
+    vertical-align: baseline;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    margin-right: 150px;
+    filter: drop-shadow(5px 5px 5px #111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.name {
+    color: #fff;
+    background-color: #111;
+    font-size: 2em;
+    padding: 12px;
+    padding-top: 10px;
+    position: relative;
+    bottom: 8px;
+    text-align: center;
+}
+
+.text {
+    float: left;
+    margin-top: 50px;
+    background-color: orange;
+}
+
+.name a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+/* article-right end */
+/* article end */
+
+/* **************** */
+/* PERSÖNLICHKEITEN */
+/* **************** */
+.person-ueberschrift {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column img {
+    margin-top: 25px;
+    height: 400px;
+    width: 400px;
+}
+
+.perso {
+    margin-bottom: 100px;
+    color: #fff;
+    background-color: #111;
+    font-size: 2em;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    bottom: 10px;
+    height: 35px;
+}
+.item {
+    filter: drop-shadow(2px 2px 2px #111);
+    transition: .7s ease;
+}
+
+.item:hover {
+    filter: drop-shadow(7px 7px 7px #111);
+    transform: scale(1.05);
+    transition: .4s ease;
+}
+
+/* *************/
+/* Alan Turing */
+/* *********** */
+
+.info-text {
+    background-color: red;
+}
+
+.info-image {
+    float: right;
+    margin-top: 150px;
+    margin-right: 5%;
+}
+
+/* ****** */
+/* Themen */
+/* ****** */
+
+nav2 {
+    background-color: #111;
+    float: left;
+    width: 15%;
+    height: 1080px;
+    margin-left: -50px;
+    padding-left: 50px;
+}
+
+nav2 ul li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+nav2 ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ********* */
+/* IMPRESSUM */
+/* ********* */
+
+.impressum {
+    padding: 75px;
+}
